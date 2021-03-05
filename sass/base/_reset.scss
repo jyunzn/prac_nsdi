@@ -1,0 +1,27 @@
+@import
+    '../helper/var';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    &:link {
+        color: $color;
+    }
+    &:visited {
+        color: $color;
+    }
+}

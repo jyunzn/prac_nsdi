@@ -1,0 +1,204 @@
+@import 
+    '../helper/var',
+    '../base/reset',
+    '../comp/boder-move-btn.scss'
+;
+
+// [components]
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 50px;
+    &-each {
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+    }
+    &-top {
+        &-left {
+            background: url(../../imgs/loading_01.svg) no-repeat center;
+        }
+        &-right {
+            background: url(../../imgs/loading_03.svg) no-repeat center;
+        }
+    }
+    &-bottom {
+        &-left {
+            background: url(../../imgs/loading_02.svg) no-repeat center;
+        }
+        &-right {
+            background: url(../../imgs/loading_04.svg) no-repeat center;
+        }
+    }
+}
+
+.menu-btn {
+    height: 40px;
+    width: 40px;
+    background: #dea56a;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    &-line {
+        height: 3px;
+        width: 50%;
+        border-radius: 20px;
+        background: #484848;
+        display: inline-block;
+        position: absolute;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &-top {
+            top: 30%;
+        }
+        &-middle {
+            top: 50%;
+        }
+        &-bottom {
+            top: 70%;
+        }
+    }
+}
+
+.nav-lists {
+    .list {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 0;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 7.5px 0 7.5px 0;
+        transition: all ease .3s;
+        &-style {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.4);
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 18px;
+            transition: all ease .3s;
+        }
+        &-text {
+            font-size: 14px;
+            vertical-align: middle;
+            margin-right: 5px;
+            transition: all ease .3s;
+        }
+
+        &-line {
+            display: inline-block;
+            width: 20px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.4);
+            line-height: 20px;
+            vertical-align: middle;
+            margin-right: 6px;
+            overflow: hidden;
+            transition: all ease .3s;
+            &::before {
+                content: '';
+                display: block;
+                background: #fff;
+                width: 100%;
+                height: 1px;
+                transform: translateX(-100%);
+            }
+        }
+
+        &:hover {
+            
+            transform: translateX(12px);
+            .list-text {
+
+                padding-left: 5px;
+                letter-spacing: 3.5px;
+            }
+            .list-line {
+                width: 25px;
+            }
+        }
+    }
+    .cur {
+        color: #fff;
+        .list {
+            &-style {
+                background: #fff;
+            }
+            &-line::before {
+                transition: all ease 1s;
+                transform: unset;
+            }
+        } 
+    }
+}
+
+.news-box {
+    transform: rotate(270deg);
+    &::before {
+        content: '';
+        display: block;
+        background: $color;
+        width: 100%;
+        height: 5px;
+        margin-bottom: 14px;
+    }
+    .news-text {
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+
+// [layout]
+body {
+    background: $background-color;
+    font-family: 'Open Sans', 'Noto Sans TC', "PingFang TC" ,"微軟正黑體", "蘋果儷中黑",'sans-serif' , Arial;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    .logo {
+        position: absolute;
+        top: 50px;
+        left: 45px;
+        .h1-text {
+            text-indent: -99999px;
+        }
+    }
+    .menu-btn {
+        position: absolute;
+        top: 50px;
+        right: 45px;
+    }
+}
+
+.nav-cur {
+    position: fixed;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+}
+
+.msg-news {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .news-box {
+        position: absolute;
+        bottom: 45px;
+        left: 45px;
+    }
+    .fb-msg {
+        position: absolute;
+        right: 45px;
+        bottom: 45px;
+    }
+}
