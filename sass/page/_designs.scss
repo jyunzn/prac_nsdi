@@ -1,0 +1,149 @@
+#webDesign,
+#appDesign {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &.cur {
+        .design-mask::before {
+            transform: translateY(0);
+        }
+    }
+}
+
+.design-wrapper {
+    .imgs { 
+        width: 50%;
+        position: relative;
+        .img {
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    }
+    .desc { 
+        p {
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 1.8px;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 40px 0;
+        }
+    }
+
+    .design-mask {
+        padding-top: calc(100% * 628 / 1357);
+        transform: translateY(-50%);
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: calc(100% * 628 / 1357);
+            background: #555555;
+            position: absolute;
+            top: 0;
+            transition: transform .3s ease;
+            transform: translateY(100%);
+        }
+    }
+}
+
+
+@keyframes app-change-display {
+    0% { opacity: 1}
+    50% { opacity: 0}
+    100% { opacity: 1}
+}
+
+#appDesign .display2 {
+    animation: app-change-display 5s ease infinite;
+}
+
+
+
+@media screen and (max-width: 969px) {
+    #webDesign,
+    #appDesign {
+        text-align: center;
+        vertical-align: middle;
+        height: auto;
+        padding-top: 90px;
+    }
+
+    // 置中用的
+    #webDesign::before,
+    #appDesign::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;;
+    }
+
+    .design-wrapper {
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        height: 1035px;
+        .desc {
+            text-align: left;
+            padding: 75px;
+        }
+        .imgs {
+            position: absolute;
+            right: 0;
+            width: 83%;
+            .img { 
+                transform: unset;
+            }
+        }
+    }
+
+    #webDesign::after,
+    #appDesign::after {
+        content: '';
+        display: block;
+        height: 450px;
+        width: 75vw;
+        background: #555;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-70px);
+        z-index: -1;
+    }
+    
+}
+
+@media screen and (min-width: 970px) {
+    .design-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 1px;
+        .imgs {
+            position: absolute;
+            top: 0;
+            left: 40px;
+            width: 50%;
+            transform: translateY(-50%);
+        }
+        .desc {
+            position: absolute;
+            top: 0;
+            right: 40px;
+            max-width: 25%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .design-mask {
+        display: none!important;
+    }
+}

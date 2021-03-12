@@ -5,62 +5,323 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/page/works.css">
+    <link rel="stylesheet" href="./css/page/index.css">
 </head>
 <body>
-    <header>
-        <h1>
-            <a class="logo" href="#">
-                <div class="logo-each logo-top-left"></div>
-                <div class="logo-each logo-top-right"></div>
-                <div class="logo-each logo-bottom-left"></div>
-                <div class="logo-each logo-bottom-right"></div>
-                <span class="h1-text">山川久也</span>
-            </a>
-        </h1>
-        <div class="menu-btn">
-            <b class="menu-btn-line menu-btn-line-top"></b>
-            <b class="menu-btn-line menu-btn-line-middle"></b>
-            <b class="menu-btn-line menu-btn-line-bottom"></b>
+    <div class="layout">
+        <header>
+            <h1>
+                <a class="logo" href="#">
+                    <div class="logo-each logo-top-left"></div>
+                    <div class="logo-each logo-top-right"></div>
+                    <div class="logo-each logo-bottom-left"></div>
+                    <div class="logo-each logo-bottom-right"></div>
+                    <span class="h1-text">山川久也</span>
+                </a>
+            </h1>
+            <div class="menu-wrap">
+                <div class="menu-btn">
+                    <b class="menu-btn-line menu-btn-line-top"></b>
+                    <b class="menu-btn-line menu-btn-line-middle"></b>
+                    <b class="menu-btn-line menu-btn-line-bottom"></b>
+                </div>
+                <b class="ext-droplet"></b>
+            </div>
+        </header>
+        <nav class="nav-cur">
+            <ul class="nav-lists">
+                <li class="list" data-to="nsdiTop">
+                    <a href="#nsdiTop">
+                        <i class="list-style"></i>
+                        <span class="list-text">頁首</span>
+                        <b class="list-line"></b>
+                    </a>
+                </li>
+                <li class="list" data-to="webDesign">
+                        <i class="list-style"></i>
+                        <span class="list-text">
+                            <a href="#webDesign" data-to="webDesign">網站設計 </a>
+                            .
+                            <a href="#appDesign" data-to="appDesign"> APP 設計</a>
+                        </span>
+                        <b class="list-line-web" data-to="webDesign"></b>
+                        <b class="list-line-app" data-to="appDesign"></b>
+                </li>
+                <li class="list" data-to="works">
+                    <a href="#works">
+                        <i class="list-style"></i>
+                        <span class="list-text">作品一覽</span>
+                        <b class="list-line"></b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="msg-news">
+            <div class="news-box">
+                <a class="news-text" href="#">NEWS</a>
+            </div>
+            <div class="fb-msg">
+                <svg width="60px" height="60px" viewBox="0 0 60 60" cursor="pointer"><svg x="0" y="0" width="60px" height="60px"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g><circle fill="#dea56a" cx="30" cy="30" r="30"></circle><svg x="10" y="10"><g transform="translate(0.000000, -10.000000)" fill="#FFFFFF"><g id="logo" transform="translate(0.000000, 10.000000)"><path d="M20,0 C31.2666,0 40,8.2528 40,19.4 C40,30.5472 31.2666,38.8 20,38.8 C17.9763,38.8 16.0348,38.5327 14.2106,38.0311 C13.856,37.9335 13.4789,37.9612 13.1424,38.1098 L9.1727,39.8621 C8.1343,40.3205 6.9621,39.5819 6.9273,38.4474 L6.8184,34.8894 C6.805,34.4513 6.6078,34.0414 6.2811,33.7492 C2.3896,30.2691 0,25.2307 0,19.4 C0,8.2528 8.7334,0 20,0 Z M7.99009,25.07344 C7.42629,25.96794 8.52579,26.97594 9.36809,26.33674 L15.67879,21.54734 C16.10569,21.22334 16.69559,21.22164 17.12429,21.54314 L21.79709,25.04774 C23.19919,26.09944 25.20039,25.73014 26.13499,24.24744 L32.00999,14.92654 C32.57369,14.03204 31.47419,13.02404 30.63189,13.66324 L24.32119,18.45264 C23.89429,18.77664 23.30439,18.77834 22.87569,18.45674 L18.20299,14.95224 C16.80079,13.90064 14.79959,14.26984 13.86509,15.75264 L7.99009,25.07344 Z"></path></g></g></svg></g></g></svg></svg>
+            </div>
         </div>
-    </header>
-    <nav class="nav-cur">
-        <ul class="nav-lists">
-            <li class="list cur">
-                <i class="list-style"></i>
-                <span class="list-text">頁首</span>
-                <b class="list-line"></b>
-            </li>
-            <li class="list">
-                <i class="list-style"></i>
-                <span class="list-text">網站設計 . APP 設計</span>
-                <b class="list-line"></b>
-                <b class="list-line"></b>
-            </li>
-            <li class="list">
-                <i class="list-style"></i>
-                <span class="list-text">作品</span>
-                <b class="list-line"></b>
-            </li>
-        </ul>
-    </nav>
-    <div class="msg-news">
-        <div class="news-box">
-            <a class="news-text" href="#">NEWS</a>
-        </div>
-        <div class="fb-msg">
-            <svg width="60px" height="60px" viewBox="0 0 60 60" cursor="pointer"><svg x="0" y="0" width="60px" height="60px"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g><circle fill="#dea56a" cx="30" cy="30" r="30"></circle><svg x="10" y="10"><g transform="translate(0.000000, -10.000000)" fill="#FFFFFF"><g id="logo" transform="translate(0.000000, 10.000000)"><path d="M20,0 C31.2666,0 40,8.2528 40,19.4 C40,30.5472 31.2666,38.8 20,38.8 C17.9763,38.8 16.0348,38.5327 14.2106,38.0311 C13.856,37.9335 13.4789,37.9612 13.1424,38.1098 L9.1727,39.8621 C8.1343,40.3205 6.9621,39.5819 6.9273,38.4474 L6.8184,34.8894 C6.805,34.4513 6.6078,34.0414 6.2811,33.7492 C2.3896,30.2691 0,25.2307 0,19.4 C0,8.2528 8.7334,0 20,0 Z M7.99009,25.07344 C7.42629,25.96794 8.52579,26.97594 9.36809,26.33674 L15.67879,21.54734 C16.10569,21.22334 16.69559,21.22164 17.12429,21.54314 L21.79709,25.04774 C23.19919,26.09944 25.20039,25.73014 26.13499,24.24744 L32.00999,14.92654 C32.57369,14.03204 31.47419,13.02404 30.63189,13.66324 L24.32119,18.45264 C23.89429,18.77664 23.30439,18.77834 22.87569,18.45674 L18.20299,14.95224 C16.80079,13.90064 14.79959,14.26984 13.86509,15.75264 L7.99009,25.07344 Z"></path></g></g></svg></g></g></svg></svg>
-        </div>
-    </div>
-    <div id="works">
-        <div class="border-move-btn">
-            <b class="border-line border-line-top"></b>
-            <b class="border-line border-line-bottom"></b>
-            <b class="border-line border-line-right"></b>
-            <b class="border-line border-line-left"></b>
-            <a class="btn-text" href="#">更多作品</a>
-        </div>
+        <div class="mask"><img src="./imgs/mask.gif" alt=""></div>
     </div>
     
+    <section id="nsdiTop">
+        <div class="bgs">
+            <div class="bg-img aniz"><img src="./imgs/nsdiTop/img_home-top_14.png" alt=""></div>
+            <div class="bg-img aniyz"><img src="./imgs/nsdiTop/img_home-top_13.png" alt=""></div>
+            <div class="bg-img aniyz"><img src="./imgs/nsdiTop/img_home-top_12.png" alt=""></div>
+            <div class="bg-img aniz"><img src="./imgs/nsdiTop/img_home-top_11.png" alt=""></div>
+            <div class="bg-img anixyz"><img src="./imgs/nsdiTop/img_home-top_10.png" alt=""></div>
+            <div class="bg-img aniz"><img src="./imgs/nsdiTop/img_home-top_09.png" alt=""></div>
+            <div class="bg-img anixyz"><img src="./imgs/nsdiTop/img_home-top_07.png" alt=""></div>
+            <div class="bg-img aniz">
+                <div class="title-wrap">
+                <div class="title">
+                    <div class="title-img"><img src="./imgs/nsdiTop/img_home-top_08@2x.png" alt=""></div>
+                    <div class="title-img"><img src="./imgs/nsdiTop/img_home-top_06@2x.png" alt=""></div>
+                    <div class="title-img"><img src="./imgs/nsdiTop/img_home-top_05@2x.png" alt=""></div>
+                    <div class="title-img"><img src="./imgs/nsdiTop/img_home-top_04@2x.png" alt=""></div>
+                </div>
+                <div class="title-desc">
+                    <h2>網頁設計 UNLIMITED 無設限</h2>
+                    <p>我們不走設計大師的本質路線，也不標榜自身力行的個人主義，</p>
+                    <p>完全的無限無框，就是愛網站</p>
+                </div>
+                </div>
+            </div>
+            <div class="bg-img aniz"><img src="./imgs/nsdiTop/img_home-top_03.png" alt=""></div>
+            <div class="bg-img anixyz"><img src="./imgs/nsdiTop/img_home-top_02.png" alt=""></div>
+            <div class="bg-img anixyz"><img src="./imgs/nsdiTop/img_home-top_01.png" alt=""></div>
+            
+        </div>
+       <a class="awwwards" href="#">Awwwards</a>
+        <div class="scroll-btn">
+            <i class="icon">
+                <svg class="ic-hint-tri" viewBox="0 0 10 10">
+                    <polygon class="ic-hint-tri" points="0,5, 10,0 10,10"></polygon>
+                </svg>
+            </i>
+            <span class="texts">
+                <span>S</span>
+                <span>C</span>
+                <span>R</span>
+                <span>O</span>
+                <span>L</span>
+                <span>L</span>
+            </span>
+        </div>
+    </section>
+    <section id="webDesign" class="cur">
+        <div class="contaniner design-wrapper">
+            <div class="design-mask"></div>
+            <section class="desc">
+                <h2 class="desc-title">
+                    <span class="en">WEB Design</span>
+                    <span class="zh">網站設計</span>
+                </h2>
+                <p>山川久也網站設計公司提供專業卓越的網站設計與網站系統，從網站企劃、系統架構規劃、RWD網頁設計、手機版網頁設計、電腦版網頁設計、後台程式開發，伺服器建置與維護，都是累積10年以上的客製化經驗，所以請放心將網站交給我們。</p>
+                <div class="border-move-btn">
+                    <b class="border-line border-line-top"></b>
+                    <b class="border-line border-line-bottom"></b>
+                    <b class="border-line border-line-right"></b>
+                    <b class="border-line border-line-left"></b>
+                    <a class="btn-text" href="#">詳細介紹</a>
+                </div>
+            </section>
+            <div class="imgs">
+                <div class="img">
+                    <img src="./imgs/webDesign/img_home-servers01_01@2x.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="./imgs/webDesign/img_home-servers01_02@2x.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="./imgs/webDesign/img_home-servers01_03@2x.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="./imgs/webDesign/img_home-servers01_04@2x.png" alt="">
+                </div>
+                <div class="ani">
+                    <div class="img">
+                        <img src="./imgs/webDesign/img_home-servers01_05@2x.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="./imgs/webDesign/img_home-servers01_06@2x.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="./imgs/webDesign/img_home-servers01_07@2x.png" alt="">
+                    </div>
+                    <div class="img">
+                        <img src="./imgs/webDesign/img_home-servers01_08@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="appDesign">
+        <div class="contaniner design-wrapper">
+            <div class="design-mask"></div>
+            <section class="desc">
+                <h2 class="desc-title">
+                    <span class="en">APP Design</span>
+                    <span class="zh">APP設計</span>
+                </h2>
+                <p>手機時代，擁有專屬APP可以提高服務品質，增加顧客黏著度，山川久也提供iOS與Android雙版本APP的客製化設計服務，採用高成本與高品質的原生語言開發，讓APP速度最快、操作最順、使用最穩，我們重視維護，不怕變成APP孤兒，幫助客戶順利朝向物聯網與大數據的未來前進。</p>
+                <div class="border-move-btn">
+                    <b class="border-line border-line-top"></b>
+                    <b class="border-line border-line-bottom"></b>
+                    <b class="border-line border-line-right"></b>
+                    <b class="border-line border-line-left"></b>
+                    <a class="btn-text" href="#">詳細介紹</a>
+                </div>
+            </section>
+            <div class="imgs ani">
+                <div class="img">
+                    <img src="./imgs/appDesign/img_home-server02_01@2x.png" alt="">
+                </div>
+                <div class="img display1">
+                    <img src="./imgs/appDesign/img_home-server02_02@2x.png" alt="">
+                </div>
+                <div class="img display2">
+                    <img src="./imgs/appDesign/img_home-server02_03@2x.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="works">
+        <div class="contaniner works-container">
+            <h2 class="desc-title">
+                <span class="en">Our Works</span>
+                <span class="zh">作品一覽</span>
+            </h2>
+            <ul class="works-wrapper">
+                <li class="">
+                    <figure class="works-img">
+                        <img src="./imgs/works/2019010519011814.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">萊特薇庭</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                </li>
+                <li class="">
+                    <figure class="works-img">
+                        <img src="./imgs/works/2019011418511089.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">Professional Dock</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                <li>
+                    <figure class="works-img">
+                        <img src="./imgs/works/2019012319213828.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">oval</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                <li>
+                    <figure class="works-img">
+                        <img src="./imgs/works/2019020313221592.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">完美履歷</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                <li>
+                    <figure class="works-img">
+                        <img src="./imgs/works/2019080217310434.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">本地The Place</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                <li>
+                    <figure class="works-img">
+                        <img src="./imgs/works/2019102210334662.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">科技部60週年</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                <li>
+                    <figure class="works-img">
+                        <img src="./imgs/works/2020022610082016.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">DMP</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+                <li>
+                    <figure class="works-img">
+                        <img src="./imgs/works/2020030414515748.jpg" data-mouse="true" alt="">
+                        <figcaption class="works-name"><span class="text">稻荷</span></figcaption>
+                    </figure>
+                    <a href="#"></a>
+            </ul>
+            <div class="more-wraper">
+                <div class="border-move-btn">
+                    <b class="border-line border-line-top"></b>
+                    <b class="border-line border-line-bottom"></b>
+                    <b class="border-line border-line-right"></b>
+                    <b class="border-line border-line-left"></b>
+                    <a class="btn-text" href="#">更多作品</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="contaniner cnt-wrapper clear">
+            <address class="cnt">
+                <div class="cnt-infos clear">
+                    <div>
+                        <p class="info"><span class="title">地址</span><span class="desc">236 新北市土城區廣明街90巷16號1F</span></p>
+                        <p class="info"><span class="title">電話</span><span class="desc">(02) 8967-7652</span></p>
+                    </div>
+                    <div>
+                        <p class="info"><span class="title">營業時間</span><span class="desc">週一至週五 09:00 - 18:00</span></p>
+                        <p class="info"><span class="title">統一編號</span><span class="desc">29134540</span></p>
+                    </div>
+                </div>
+                <div class="cnt-connect clear">
+                    <div class="social clear">
+                        <a href=""><img src="./imgs/icon_mail@2x.png" alt=""/></a>
+                        <a href=""><img src="./imgs/icon_line@2x.png" alt=""/></a>
+                        <a href=""><img src="./imgs/icon_FB@2x.png" alt=""/></a>
+                    </div>
+                    <div class="connect">
+                        <a href=""><span>網站地圖</span></a>
+                        <a href=""><span>與我們聯絡</span></a>
+                    </div>
+                </div>
+            </address>
+            <div class="other">
+                <div class="btn-box">
+                    <div class="border-move-btn">
+                        <b class="border-line border-line-top"></b>
+                        <b class="border-line border-line-bottom"></b>
+                        <b class="border-line border-line-right"></b>
+                        <b class="border-line border-line-left"></b>
+                        <a class="btn-text" href="#">立即洽詢</a>
+                    </div>
+                </div>
+                <p class="copyright">Copyright © 2021 山川久也設計有限公司 All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="gooey">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" filterUnits="userSpaceOnUse"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -8" result="gooey"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="gooey" operator="atop"></feComposite>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/navLists.js"></script>
+    <script src="./js/wheel.js"></script>
+    <script src="./js/menu-btn.js"></script>
+    <script src="./js/nsdiTop.js"></script>
+    <script src="./js/webDesign.js"></script>
+    <script src="./js/appDesign.js"></script>
+    <script src="./js/works.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
